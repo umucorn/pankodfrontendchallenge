@@ -6,7 +6,7 @@ import {
     TwitterIcon,
     YoutubeIcon,
     LinkedinIcon,
-} from "@components/icons";
+} from "@elements/icons";
 import styles from "./index.module.scss";
 
 export const Footer: React.FC = () => {

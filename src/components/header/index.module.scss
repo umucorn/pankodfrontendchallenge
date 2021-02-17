@@ -1,0 +1,15 @@
+.header {
+    width: 100%;
+    background: var(--headerBackground);
+}
+
+.headerContents {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register {
+    display: inline-block;
+    background-color: var(--gray);
+    padding: 13px 16px 11px 13px;
+}
