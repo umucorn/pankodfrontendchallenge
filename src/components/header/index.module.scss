@@ -1,15 +1,69 @@
 .header {
     width: 100%;
     background: var(--headerBackground);
+    box-shadow: 0 3px 10px 0 black;
+    z-index: 1;
 }
 
 .headerContents {
     display: flex;
     justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+    @media only screen and (max-width: 600px) {
+        flex-wrap: wrap;
+    }
+}
+
+.headerNav {
+    overflow: hidden; 
+
+    a {
+        text-decoration: none;
+        color: white;
+        margin-right: 28px;
+        font-size: 14px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        height: 0;
+        width: 100%;
+    }
+}
+
+.headerNavMenuOpen {
+    @media only screen and (max-width: 600px) {
+        height: auto;
+
+        a {
+            display: block;
+            padding: 1em;
+            text-align: right;
+            margin-right: 0;
+        }
+    }
 }
 
 .register {
     display: inline-block;
     background-color: var(--gray);
-    padding: 13px 16px 11px 13px;
+    padding: 12px 16px 9px 16px;
+}
+
+.hamburgerMenuToggler {
+    display: none;
+    
+    @media only screen and (max-width: 600px) {
+        display: inline-block;
+        width: 28px;
+        margin-top: 7px;
+        background: none;
+        border: none;
+        padding: 0;
+    }
 }
