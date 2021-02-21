@@ -3,17 +3,96 @@
     flex-direction: column;
     align-items: center;
     background-color: #282c34;
-    color: #ffffff;
+    color: var(--footerText);
     padding: 2rem 0;
+    font-size: 12px;
+    font-weight: 300;
 }
-.content {
+
+.externalLinksContainer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    margin-top: 45px;
 }
-.icons {
-    margin-top: 1.5rem;
-    a:not(:last-child) {
-        margin-right: 1.5rem;
+
+.socialApps a {
+    margin-right: 20px;
+}
+
+.socialApps ul li:last-of-type a {
+    margin-right: 0;
+}
+
+.appLinks a {
+    margin-right: 20px;
+}
+
+.appLinks ul li:last-of-type a {
+    margin-right: 0;
+}
+
+.copyright {
+    display: block;
+    margin-top: 1em;
+}
+
+.footerNavigation {
+    a {
+        color: var(--footerText);
+        margin-right: 15px;
+
+        &::after {
+            content: "|";
+            margin-left: 10px;
+        }
+    }
+}
+
+.footerNavigation ul li:last-of-type a {
+    margin-right: 0;
+
+    &::after {
+        content: "";
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footerNavigation{
+        text-align: center;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    .externalLinksContainer {
+        flex-direction: column;
+        margin-top: 1em;
+    }
+
+    .socialApps ul {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+    }
+
+    .appLinks {
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        li {
+            display: block;
+        }
+
+        a {
+            margin-top: 1em;
+            display: block;
+            text-align: center;
+            margin-right: 0;
+        }
     }
 }
