@@ -29,7 +29,6 @@
             "@elements/icons": ["src/elements/icons"],
             "@redux/*": ["src/redux/*"],
             "@redux": ["src/redux"],
-            "@i18n": ["./i18n"],
             "@test/*": ["test/*"],
             "@test": ["test"]
         }
