@@ -2,7 +2,8 @@
     width: 100%;
     background: var(--headerBackground);
     box-shadow: 0 3px 10px 0 black;
-    z-index: 1;
+    position: relative;
+    z-index: 3;
 }
 
 .headerContents {
