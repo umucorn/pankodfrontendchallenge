@@ -1,0 +1,21 @@
+.layoutWrapper {
+    height: 100%;
+}
+
+.pageTitleWrapper {
+    background: var(--gray);
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.660);
+    position: relative;
+    z-index: 1;
+}
+
+.pageTitle {
+    background: var(--gray);
+    margin-top: 0;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    padding: 18px 0 10px 0;
+    margin-bottom: 0;
+}
