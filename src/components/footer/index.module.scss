@@ -40,6 +40,7 @@
     a {
         color: var(--footerText);
         margin-right: 15px;
+        text-decoration: none;
 
         &::after {
             content: "|";
