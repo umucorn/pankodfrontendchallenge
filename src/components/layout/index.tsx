@@ -20,7 +20,9 @@ export const Layout: React.FC<LayoutProps> = ({ title, children, className, ...r
                     </Container>
                 </div>
             )}
-            {children}
+            <div className={styles.contentWrapper}>
+                {children}
+            </div>
             <Footer />
         </div>
     );
