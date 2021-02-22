@@ -1,21 +1,27 @@
 import React from "react";
+import Link from 'next/link';
 
-import { Header, Main, Cards, Footer } from "@components";
+import { Layout, ClapperBoardCard, Cards } from "@components";
+import { Container } from "@elements";
 
 const Home: React.FC = () => {
     return (
-        <div
-            style={{
-                display: "flex",
-                flexDirection: "column",
-                minHeight: "100vh",
-            }}
-        >
-            <Header />
-            <Main />
-            <Cards />
-            <Footer />
-        </div>
+        <Layout title="Popular Titles">
+            <Container>
+                <Cards>
+                    <Link href="/series">
+                        <a>
+                            <ClapperBoardCard title="Series" description="Popular Series" />
+                        </a>
+                    </Link>
+                    <Link href="/movies">
+                        <a>
+                            <ClapperBoardCard title="Movies" description="Popular Series" />
+                        </a>
+                    </Link>
+                </Cards>
+            </Container>
+        </Layout>
     );
 };
 

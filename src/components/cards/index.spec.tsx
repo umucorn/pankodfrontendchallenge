@@ -1,20 +1,23 @@
 import { render } from "@test";
 
-import data from "@public/meta.json";
-
 import { Cards } from "./index";
 
-describe("Cards component testing with testing-library", () => {
+describe("<Cards />", () => {
     it("renders without crashing", () => {
         const component = render(<Cards />);
 
         expect(component).toBeTruthy();
     });
 
-    it("cards length must be equal to the length of the meta data ", () => {
-        const { getAllByTestId } = render(<Cards />);
+    it("successfully renders given children", () => {
+        const childrenText = "Some test content";
 
-        const cardContainer = getAllByTestId("container");
-        expect(cardContainer).toHaveLength(data.plugins.length);
+        const { getByText } = render(
+            <Cards>
+                {childrenText}
+            </Cards>
+        );
+
+        getByText(childrenText);
     });
 });

@@ -1,21 +1,12 @@
 import React from "react";
 
 import styles from "./index.module.scss";
-import data from "@public/meta.json";
-import { Card } from "@components";
+// import data from "@public/meta.json";
 
-export const Cards: React.FC = () => {
+export const Cards: React.FC = ({ children }) => {
     return (
         <div className={styles.cards}>
-            {(data?.plugins ?? []).map((plugin) => (
-                <div
-                    key={`key-${plugin.name}`}
-                    className={styles.cardWrapper}
-                    data-testid="container"
-                >
-                    <Card title={plugin.name}>{plugin.description}</Card>
-                </div>
-            ))}
+            {children}
         </div>
     );
 };
