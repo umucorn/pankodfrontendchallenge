@@ -9,12 +9,22 @@ const Home: React.FC = () => {
         <Layout title="Popular Titles">
             <Container>
                 <Cards>
-                    <Link href="/series">
+                    <Link 
+                        href={{
+                            pathname: '/results/[programType]',
+                            query: { programType: 'series' },
+                        }}
+                    >
                         <a>
                             <ClapperBoardCard title="Series" description="Popular Series" />
                         </a>
                     </Link>
-                    <Link href="/movies">
+                    <Link 
+                        href={{
+                            pathname: '/results/[programType]',
+                            query: { programType: 'movies' },
+                        }}
+                    >
                         <a>
                             <ClapperBoardCard title="Movies" description="Popular Series" />
                         </a>

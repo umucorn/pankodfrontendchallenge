@@ -2,14 +2,15 @@ import React from "react";
 import clsx from 'clsx';
 import styles from './index.module.scss';
 import { Footer, Header } from "@components";
-import { Container } from '@elements';
+import { Container, SearchBox } from '@elements';
 
 type LayoutProps = {
     className?: string,
     title?: string,
+    showControls?: boolean,
 };
 
-export const Layout: React.FC<LayoutProps> = ({ title, children, className, ...rest }) => {
+export const Layout: React.FC<LayoutProps> = ({ title, children, className, showControls, ...rest }) => {
     return (
         <div className={clsx(styles.layoutWrapper, className)} {...rest}>
             <Header />
