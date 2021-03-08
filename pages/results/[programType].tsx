@@ -8,10 +8,9 @@ import styles from '@styles/pages/results.module.scss';
 const Series: React.FC = () => {
     const router = useRouter();
     const { programType } = router.query
-    console.log(programType)
 
     return (
-        <Layout title="Popular Titles">
+        <Layout title={programType === "series" ? "Popular Series" : "Popular Movies"}>
             <Container className={styles.controlsContainer}>
                 <SearchBox className={styles.searchBoxOnPage} />
                 <SelectBox 
