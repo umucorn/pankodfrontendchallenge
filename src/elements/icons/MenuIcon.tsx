@@ -1,6 +1,6 @@
 import * as React from "react";
 
-function SvgMenuIcon(props: React.SVGProps<SVGSVGElement>) {
+export const MenuIcon: React.FC = (props: React.SVGProps<SVGSVGElement>) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg" 
@@ -17,5 +17,3 @@ function SvgMenuIcon(props: React.SVGProps<SVGSVGElement>) {
         </svg>
     );
 }
-
-export default SvgMenuIcon;

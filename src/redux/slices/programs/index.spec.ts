@@ -1,8 +1,6 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import { AsyncThunkAction, Dispatch } from '@reduxjs/toolkit';
 import Programs, { initialState, fetchPrograms, searchValueChange, sortingChange, IPrograms } from "./index";
-import { Client, dummyData } from '@utils';
 
 const mockStore = configureMockStore([thunk]);
 

@@ -2,7 +2,7 @@ import React from "react";
 import clsx from 'clsx';
 import styles from './index.module.scss';
 import { Footer, Header } from "@components";
-import { Container, SearchBox } from '@elements';
+import { Container } from '@elements';
 
 type LayoutProps = {
     className?: string,
@@ -10,7 +10,7 @@ type LayoutProps = {
     showControls?: boolean,
 };
 
-export const Layout: React.FC<LayoutProps> = ({ title, children, className, showControls, ...rest }) => {
+export const Layout: React.FC<LayoutProps> = ({ title, children, className, ...rest }) => {
     return (
         <div className={clsx(styles.layoutWrapper, className)} {...rest}>
             <Header />

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { MenuIcon } from '../../elements/icons';
 import clsx from 'clsx';
 
-import { Container, Logo } from '@elements';
+import { Container, Logo } from '@elements';
 
 export const Header: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);

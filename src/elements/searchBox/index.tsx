@@ -6,7 +6,7 @@ type SearchBoxProps = {
     onSearch?: (string) => void,
 };
 
-export const SearchBox: React.FC<React.HTMLProps<HTMLInputElement> & SearchBoxProps> = ({ className, value, onSearch, ...props }) => {
+export const SearchBox: React.FC<React.HTMLProps<HTMLInputElement> & SearchBoxProps> = ({ className, ...props }) => {
     return (
         <div className={clsx(styles.searchBoxWrapper, className)}>
             <input placeholder="Search..." className={styles.searchBox} type="string" {...props} />

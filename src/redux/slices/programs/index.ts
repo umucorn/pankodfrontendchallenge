@@ -66,25 +66,25 @@ export const programsSlice = createSlice({
       }
   },
   extraReducers: {
-    [fetchPrograms.pending.type]: (state, action) => {
+    [fetchPrograms.pending.type]: (state) => {
         state.loading = 'pending';
     },
     [fetchPrograms.fulfilled.type]: (state, action) => {
         state.loading = 'loaded';
         state.programs = action.payload.entries;
     },
-    [fetchPrograms.rejected.type]: (state, action) => {
+    [fetchPrograms.rejected.type]: (state) => {
         state.loading = 'errored';
     },
   }
 });
 
-export const getLoading = (state: IRootState) => state.programs.loading;
-export const getSearchText = (state: IRootState) => state.programs.searchText;
-export const getSorting = (state: IRootState) => state.programs.sorting;
-export const getAllPrograms = (state: IRootState) => state.programs.programs;
+export const getLoading: (state: IRootState) => IPrograms["loading"] = (state: IRootState) => state.programs.loading;
+export const getSearchText: (state: IRootState) => IPrograms["searchText"] = (state: IRootState) => state.programs.searchText;
+export const getSorting: (state: IRootState) => IPrograms["sorting"] = (state: IRootState) => state.programs.sorting;
+export const getAllPrograms: (state: IRootState) => IPrograms["programs"] = (state: IRootState) => state.programs.programs;
 
-export const getSelectedPrograms = createSelector(
+export const getSelectedPrograms: (state: IRootState) => IProgram[] = createSelector(
     [getSearchText, getSorting, getAllPrograms],
     (searchText, sorting, allPrograms) => {
         let result = allPrograms

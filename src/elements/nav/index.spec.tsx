@@ -1,4 +1,4 @@
-import { fireEvent, render } from "@test";
+import { render } from "@test";
 
 import { Nav } from "./index";
 

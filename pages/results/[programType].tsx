@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Link from 'next/link';
 import { useRouter } from 'next/router'
 import { useSelector, useDispatch } from "react-redux";
 import clsx from 'clsx';
@@ -20,7 +19,7 @@ interface ISortingOption {
     value: ISorting,
     label: string,
     default?: boolean,
-};
+}
 
 const sortingOptions: ISortingOption[] = [
     {
@@ -61,7 +60,7 @@ const Series: React.FC = () => {
     const programsToDisplay = selectedPrograms.filter(program => program.programType === programType);
 
     useEffect(() => {
-        dispatch(fetchPrograms());
+        dispatch(fetchPrograms(false));
     }, []);
 
     const handleSearchValueChange = (e) => {

@@ -1,6 +1,6 @@
 import React from "react";
 import Link from 'next/link';
-import { Container, Nav } from '@elements';
+import { Container, Nav } from '@elements';
 
 import styles from "./index.module.scss";
 

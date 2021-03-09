@@ -1,6 +1,6 @@
 import * as React from "react";
 
-function SvgMenuIcon(props: React.SVGProps<SVGSVGElement>) {
+export const CaretDownIcon: React.FC = (props: React.SVGProps<SVGSVGElement>) => {
     return (
         <svg 
             version="1.1" 
@@ -20,5 +20,3 @@ function SvgMenuIcon(props: React.SVGProps<SVGSVGElement>) {
 
     );
 }
-
-export default SvgMenuIcon;
