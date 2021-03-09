@@ -1,9 +1,7 @@
 import { combineReducers } from "redux";
 
-import counter from "@redux/slices/counter";
+import programs from "@redux/slices/programs";
 
-const rootReducer = combineReducers({ counter });
-
-export type RootState = ReturnType<typeof rootReducer>;
+const rootReducer = combineReducers({ programs });
 
 export default rootReducer;

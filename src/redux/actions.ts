@@ -1,1 +1,1 @@
-export { increase, decrease } from "@redux/slices/counter";
+export { searchValueChange, sortingChange } from "@redux/slices/programs";

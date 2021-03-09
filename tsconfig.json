@@ -21,6 +21,8 @@
             "@containers/*": ["src/containers/*"],
             "@elements": ["src/elements"],
             "@elements/*": ["src/elements/*"],
+            "@utils": ["src/utils"],
+            "@utils/*": ["src/utils/*"],
             "@styles/*": ["src/styles/*"],
             "@styles": ["src/styles"],
             "@public/*": ["public/*"],

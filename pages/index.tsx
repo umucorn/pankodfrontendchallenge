@@ -22,11 +22,11 @@ const Home: React.FC = () => {
                     <Link 
                         href={{
                             pathname: '/results/[programType]',
-                            query: { programType: 'movies' },
+                            query: { programType: 'movie' },
                         }}
                     >
                         <a>
-                            <ClapperBoardCard title="Movies" description="Popular Series" />
+                            <ClapperBoardCard title="Movies" description="Popular Movies" />
                         </a>
                     </Link>
                 </Cards>

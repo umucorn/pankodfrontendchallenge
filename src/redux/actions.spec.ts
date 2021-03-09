@@ -1,14 +1,20 @@
-import { increase, decrease } from "./actions";
+import { searchValueChange, sortingChange } from "./actions";
 
 describe("Redux Actions", () => {
-    describe("Counter Actions", () => {
-        it("increase should return increase.type", () => {
-            const action = increase();
-            expect(action.type).toBe(increase.type);
+    describe("Programs Actions", () => {
+
+        it("searchValueChange should return searchValueChange.type", () => {
+            const action = searchValueChange("new value");
+            expect(action.type).toBe(searchValueChange.type);
         });
-        it("decrease should return decrease.type", () => {
-            const action = decrease();
-            expect(action.type).toBe(decrease.type);
+
+        it("sortingChange should return sortingChange.type", () => {
+            const action = sortingChange({
+                sortKey: "yearRelease",
+                sortOrder: 'asc',
+            });
+            expect(action.type).toBe(sortingChange.type);
         });
+
     });
 });
