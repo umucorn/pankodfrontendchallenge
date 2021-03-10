@@ -3,7 +3,9 @@
 This project is an attempt to implement the [frontend-challenge](https://github.com/pankod/frontend-challenge). It doesn't have any useful features.
 
 This project was generated with [superplate](https://github.com/pankod/superplate).
-This challenge is [frontend-challenge](https://github.com/pankod/frontend-challenge)
+This challenge is [frontend-challenge](https://github.com/pankod/frontend-challenge).
+
+Implemented design is [here](https://github.com/pankod/frontend-challenge/tree/master/screens).
 
 ## Getting Started
 
